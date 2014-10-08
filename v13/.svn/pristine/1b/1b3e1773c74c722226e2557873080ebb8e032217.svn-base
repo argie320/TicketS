@@ -1,0 +1,37 @@
+<?php
+
+
+class ReopenTicket {
+	
+	public function Re_open($sv_number,$reassignTo,$reason,$reopenBy){
+	
+	     $result = DB::getInstance()->prepare("INSERT INTO tb_reopen(sv_number,reassignTo,reason,date_reopen,reopenBy)VALUES(?,?,?,now(),?)");
+		 $result->execute(array($sv_number,$reassignTo,$reason,$reopenBy));
+	
+	
+	}
+	
+	public function InsertHeader($custcode,$FromUser,$CurrentUserEmail,$source,$ticketStatus,$assignto,$department,
+		                         $company,$Reference,$duedate,$priority,$custcode,$HelpTopic,$SLAPlan,$duetime){
+	
+	     $result = DB::getInstance()->prepare("INSERT INTO  sv_ticket_header (date_created,time_created,sv_number,ticketSender,ticketSenderEmail,                    source,status,assignto,department,company,reference,duedate,priority,ticketID,help_topic,slaplan,duetime)
+		            VALUES (CURDATE(), CURTIME() ,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+		
+		 $result->execute(array($custcode,$FromUser,$CurrentUserEmail,$source,$ticketStatus,$assignto,$department,
+		                         $company,$Reference,$duedate,$priority,$custcode,$HelpTopic,$SLAPlan,$duetime));
+	
+	}
+	
+	public function InsertTicketDetails($sv_number,$subject,$issue,$remarks){
+	
+	     $result = DB::getInstance()->prepare("INSERT INTO sv_ticket_details(sv_number,subject,issue,remarks)VALUES (?,?,?,?)");		
+		 $result->execute(array($sv_number,$subject,$issue,$remarks));	
+	}
+
+
+
+
+	
+}
+
+?>

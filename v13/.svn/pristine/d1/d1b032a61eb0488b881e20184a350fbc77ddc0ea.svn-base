@@ -1,0 +1,117 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+function _(x){
+	return document.getElementById(x);
+}
+function ajaxObj(meth, url){
+	var x = new XMLHttpRequest();
+	x.open(meth, 	url, 		true);
+	x.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	return x;
+}
+function ajaxReturn(x){	
+	if(x.readyState == 4 && x.status == 200){
+		return true;
+	}
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	
+	var readOnlyInputs = ['#address1','#address2','#attention1','#attention2','#attention3','#contact','#fax'];
+	
+	$('#company').keyup(function(){
+		
+		if($(this).val() != ''){
+			
+			$('.reporter').html('Checking...');
+			var ajax = new ajaxObj("POST","request.php");
+			
+			ajax.onreadystatechange = function(){
+				if(ajaxReturn(ajax) == true){
+					//alert(ajax.responseText );
+					var obj = ajax.responseText ,
+    json = JSON.parse(obj);
+					/*
+					var json = eval('(' + ajax.responseText +')');
+					*/
+					fillUp(json.addressToDeliver,json.addressToBill,json.Attention_1,json.Attention_2,json.Attention_3,json.Contact_number,json.Fax_number);
+					$('.reporter').html('Found.');
+				}
+			}
+			
+			
+			
+			ajax.send("company="+$(this).val());
+			
+		}else{
+			$('.reporter').html('Input Company Name');
+		}
+		
+		function fillUp(a,b,c,d,e,f,g){
+			
+			var data = [a,b,c,d,e,f,g];
+			for(var i = 0; i < readOnlyInputs.length; i++){
+				$(readOnlyInputs[i]).val(data[i]);
+			}
+		}
+		$('#company').keydown(function(){
+			
+			for(var i = 0; i < readOnlyInputs.length; i++){
+				$(readOnlyInputs[i]).val('');
+			}
+		});
+	});
+	
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+<p class="reporter" id="reporter">Input Company Name</p>
+
+<form id="form" >
+<label class="label">  Company :</label> 
+	<input class = "input" type="text"  id="company" style="margin-left:72px;" >    <br>
+<label class="label">  Address (to Deliver) :</label> 
+	<input class = "input" type="text"  id="address1" style="margin-left:1px;"readonly>   
+<br>
+<label class="label">  Address (to Bill):</label> 
+	<input class = "input" type="text"  id="address2" style="margin-left:32px;"readonly>   
+<br>
+     
+<label class="label"> Attention :</label> 
+	<input class = "input" type="text"  id="attention1" style="margin-left:68px;" readonly><br>
+	 <input class = "input" type="text"  id="attention2" style="margin-left:178px;" readonly>  <br>
+	 	<input class = "input" type="text"  id="attention3" style="margin-left:178px;" readonly>  <br>
+<label class="label"> Contact No(s). :</label>
+	 <input class = "input" type="text"  id="contact" style="margin-left:38px;" readonly>  <br>
+
+	
+	 <label class="label"> Fax No(s). :</label>
+	 <input class = "input" type="text" name = "fax" id="fax" style="margin-left:68px;" readonly>  <br>
+	
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+div.cssmenu
+{
+    /*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
+    text-align:center;
+    font-size:0;
+    height: 25px;
+    *position:relative;*top:1px;/*Hacks for IE6 & IE7 */
+}
+
+div.cssmenu a
+{
+    float: left;
+    display: inline-block;
+    padding: 0 20px;
+    margin-right:1px; /* It specifies the distance between each tab */
+  /*  background:#F7F7F7;   */
+    background:#F8F8F8;
+    color:Black;
+    text-decoration:none;
+  /*  font: normal 12px Arial; */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    border:1px solid #CAD0DB;
+    border-bottom:0;
+    color:#fffff;
+    vertical-align:top;/*ChangeSet#2*/
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+div.cssmenu a:hover, div.cssmenu a.current
+{
+   /* background:#E9ECF0; */
+   background: #ffffff;
+    line-height: 25px;
+    color:#ff8040;
+
+}
+
+div.cssmenusub
+{
+    height:100%;
+    border:1px solid #eeeeee;
+    background:#ffff;
+}
+
+
+
+
+
+.tabs {
+  position: relative;   
+  min-height: 265px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+  font:10pt century gothic;
+  color:#666;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position:absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  height: 290px;
+  bottom: 0;
+  padding: 3px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+.tab #label1 {
+  padding:0; 
+  position:relative;
+  left: 1px;
+  font:10pt century gothic;
+
+}

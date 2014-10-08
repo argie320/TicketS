@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	border:0;
+	margin:0;
+	
+	}
+
+#container {	
+	position:relative;
+	left:0;
+	right:0;
+	bottom:0;
+	top:15px;
+	margin:0;
+	border:0;
+	background-color: #eeeeee;
+}
+
+
+
+/*#body {
+	width: 960px;
+	height:auto;
+	border: 1px;
+	border-style: solid;
+	border-color:#666;
+	border-radius:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFF;
+	}*/
+	
+#header {
+	height:75px;
+	width:960px;
+	margin: 1px;
+	background-image:url(../images/logo.png);
+	border-bottom:1px solid #666;
+	}
+
+#logout {
+	height:35px;
+	width:400px;
+	margin-right:10px;
+	margin-top: 8px;
+	padding-top:10px;
+	float:right;
+	border:1px solid #666;
+	text-align:center;
+	background-color: #eeeeee;
+	
+	
+	}
+	
+#body {
+	width:960px;
+	height:auto;
+	border: 0px solid black;
+	width: 960px;
+	border-width: 1px;
+	border-style: solid;
+	border-color:#666;
+	margin-left:auto;
+	border-radius:10px;
+	margin-right:auto;
+	background-color: #FFF;
+	box-shadow: 4px 4px 1px #888888
+	}
+	
+#navbar {
+	height: 40px;
+	width:960px;
+	border: 0px solid black;
+	
+	}
+	
+#navbar2 {
+	height: 40px;
+	width:960px;
+	border: 0px solid black;
+	border-bottom:1px solid #666;
+	margin-top: 5px;
+	}
+	
+#navbar3 {
+	margin-left:10px;
+	
+	}
+	
+A:link { COLOR: black; TEXT-DECORATION: none;  }
+A:visited { COLOR: black; TEXT-DECORATION: none;  }
+A:active { COLOR: black; TEXT-DECORATION: none }
+A:hover { COLOR: #666; TEXT-DECORATION: none;  }
+	
+
+#refresh {
+	float:right;
+	margin-right: 10px;
+}
+
+#table,th,td
+{
+	border:1px solid #666;
+	border-collapse:collapse;
+	margin-left:10px;
+	margin-right:10px;
+	font-family:century gothic;
+	font-size:10pt;
+
+}
+th,td
+{
+	padding:5px;
+	
+}
+
+#opentickets {
+	border:0px;
+	width:930px;
+	text-align:left;
+	background-color:#333;
+	color:#FFF;
+	font-size:11pt;
+	
+	}
+
+#opentickets2 {
+	border:0px;
+	width:930px;
+	text-align:left;
+	background-color:#eeeeee;
+	color:#333;
+	font-size:11pt;
+	
+	}
+
+#input  {
+	
+	border: 1px solid #666666;
+	width: 200px;	
+	margin-left: 10px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+
+#input2  {
+	
+	border: 1px solid #666666;
+	width: 200px;	
+	margin-left: 35px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+
+#datecss{
+
+	
+	border: 1px solid #666666;
+	width: 200px;	
+	margin-left: 35px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+
+
+
+#textarea  {
+	border: 1px solid #766;
+	width: 700px;	
+	height: 150px;
+	margin-left: 35px;
+ 	font:10pt century gothic;
+	
+}
+#textarea2  {
+	border: 1px solid #666666;
+	width: 700px;	
+	height: 100px;
+	margin-left: 35px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+#issueinput  {
+	
+	border: 1px solid #666666;
+	width: 400px;	
+	margin-left: 35px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+
+#label {
+	margin-left: 0px;
+	font: 10pt century gothic;
+	color:#666;
+	
+	}
+
+#submit {
+	margin-left: 20px;
+	font: 10pt century gothic;
+	color:#666;
+	
+	}
+#submit2{
+	margin-left: 10px;
+	text-align:center;
+	font: 10pt century gothic;
+	color:#fff;
+	font-weight:bold;
+	
+	}
+
+#table th,td{
+		border-style:hidden;
+		margin-left:10px;
+		
+		}
+#table {
+	margin-top:-30px;
+	
+	}	
+	
+#table2 {margin-left:10px;
+	
+}	
+	
+
+#iteminput  {
+	
+	border: 1px solid #666666;
+		
+	text-align:center;
+ 	font:10pt century gothic;
+	border-left:#333;
+	border-top:#333;
+	border-bottom:#333;
+}
+
+#itemdetails{
+	border:thick;
+	border-color:#000;
+	font:10pt century gothic #666;
+	height:auto;
+	margin:auto;
+	width:920px;
+	box-shadow: 2px 1px 1px 1px #888888;
+	text-align:center;
+	}
+
+#itemdetails2{
+	border:thick;
+	text-align:center;
+	font:10pt century gothic #666;
+	height:auto;
+	margin:auto;
+	width:920px;
+	box-shadow: 0px 0px 0px 1px #888888;
+	border:1px solid #666;
+	table-layout:fixed;
+	}
+
+#itemno{
+	width:60px;	
+	font:10pt century gothic #666;
+	text-align:center
+	}
+	
+#unitbrand{
+	width:160px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+#unitmodel{
+	width:160px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+#serial{
+	width:130px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+#partno{
+	width:110px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+#qty{
+	width:50px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+#warranty{
+	width:150px;	
+	font:10pt century gothic #666;
+	text-align:center;
+	}
+
+#tdtyle {border: 1px solid #666666; 
+	border-top:#FFF; 
+	border-right:#FFF;
+	font:10pt century gothic #666;}
+	
+	.myButton {
+	-moz-box-shadow:inset 0px 10px 14px -7px #276873;
+	-webkit-box-shadow:inset 0px 10px 14px -7px #276873;
+	box-shadow:inset 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font:century gothic;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+  #ticketsScroll {
+      overflow: auto;
+      height: 250px;
+   }

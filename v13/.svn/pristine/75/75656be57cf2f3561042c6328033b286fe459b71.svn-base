@@ -1,0 +1,25 @@
+<?php
+
+
+
+?>
+              <div id="navbar2">
+            	<table id="navbar3">
+                	<tr >
+                    	<th style="border:0px solid" width="80px"><a href="myworkorder?status=pullout">
+                        <img src="images/myworkorder.png" height="15px" width="15px">
+                        Pull Out()
+                        </a></th>
+                        <th style="border:0px solid" width="100px"><a href="myworkorder?status=returned">
+                        <img src="images/myworkorder.png" height="15px" width="15px">
+                        Returned()
+                        </a></th>
+                        <th style="border:0px solid" width="130px"><a href="myworkorder">
+                        <img src="images/myworkorder.png" height="15px" width="15px">
+                        My Workorder()
+                        </a></th>
+
+
+                    </tr>
+                </table>
+            </div>

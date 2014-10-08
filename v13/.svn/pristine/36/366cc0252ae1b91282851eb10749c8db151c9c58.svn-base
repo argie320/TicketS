@@ -1,0 +1,439 @@
+<?php
+
+
+  switch($status){
+        case 'Open':
+
+            if(isset($_POST['searchbutton'])){
+
+                switch($_POST['filterr']){
+
+                    case 'TicketNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0 AND sv_ticket_header.sv_number like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'Subject':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0 AND sv_ticket_details.subject like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+						
+				case 'SerialNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                INNER JOIN sv_ticket_item_details ON sv_ticket_header.sv_number = sv_ticket_item_details.sv_number
+																WHERE gagamit.user_name = ? 
+																AND sv_ticket_item_details.Part_No_Quantity like ?
+																AND sv_ticket_header.isClosed = 0																
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+						
+
+                    default:
+                        $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                        $result->execute(array($usernamex));
+                        break;
+                }
+
+            }else{
+
+                $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                           INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                           INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                           WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 0
+						   ORDER BY sv_ticket_header.date_created DESC");
+                $result->execute(array($usernamex));
+            }
+            break;
+
+        case 'Overdue':
+
+            if(isset($_POST['searchbutton'])){
+
+                switch($_POST['filterr']){
+
+                    case 'TicketNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1 AND sv_ticket_header.sv_number like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'Subject':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1 AND sv_ticket_details.subject like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+				case 'SerialNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                INNER JOIN sv_ticket_item_details ON sv_ticket_header.sv_number = sv_ticket_item_details.sv_number
+																WHERE gagamit.user_name = ? 
+																AND sv_ticket_item_details.Part_No_Quantity like ?
+																AND sv_ticket_header.isOverdue = 1																
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+						
+
+                    default:
+                        $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                        $result->execute(array($usernamex));
+                        break;
+                }
+
+            }else{
+
+                $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                          INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                         INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                         WHERE gagamit.user_name = ? AND sv_ticket_header.isOverdue = 1
+						 ORDER BY sv_ticket_header.date_created DESC");
+                $result->execute(array($usernamex));
+            }
+            break;
+
+        case 'Answered':
+
+            if(isset($_POST['searchbutton'])){
+
+                switch($_POST['filterr']){
+
+                    case 'TicketNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1 AND sv_ticket_header.sv_number like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'Subject':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1 AND sv_ticket_details.subject like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+			   case 'SerialNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                INNER JOIN sv_ticket_item_details ON sv_ticket_header.sv_number = sv_ticket_item_details.sv_number
+																WHERE gagamit.user_name = ? 
+																AND sv_ticket_item_details.Part_No_Quantity like ?
+																AND sv_ticket_header.response = 1																
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+						
+
+                    default:
+                        $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                        $result->execute(array($usernamex));
+                        break;
+                }
+
+            }else{
+
+                $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                         INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                         INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                         WHERE gagamit.user_name = ? AND sv_ticket_header.response = 1
+						 ORDER BY sv_ticket_header.date_created DESC");
+                $result->execute(array($usernamex));
+            }
+            break;
+
+        case 'ClosedTicket':
+
+            if(isset($_POST['searchbutton'])){
+
+                switch($_POST['filterr']){
+
+                    case 'TicketNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1 AND sv_ticket_header.sv_number like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'Subject':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1 AND sv_ticket_details.subject like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+						
+				 case 'SerialNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                INNER JOIN sv_ticket_item_details ON sv_ticket_header.sv_number = sv_ticket_item_details.sv_number
+																WHERE gagamit.user_name = ? 
+																AND sv_ticket_item_details.Part_No_Quantity like ?
+																AND sv_ticket_header.isClosed = 1																
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+						
+						
+
+                    default:
+                        $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                        $result->execute(array($usernamex));
+                        break;
+                }
+
+            }else{
+
+                $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                         INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                         INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                         WHERE gagamit.user_name = ? AND sv_ticket_header.isClosed = 1
+						 ORDER BY sv_ticket_header.date_created DESC");
+                $result->execute(array($usernamex));
+            }
+            break;
+
+        default :
+
+            if(isset($_POST['searchbutton'])){
+
+                switch($_POST['filterr']){
+
+                    case 'TicketNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_header.sv_number like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'Subject':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? AND sv_ticket_details.subject like ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    case 'SerialNo':
+                        if ($searchme == ""){
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ?
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex));
+                        }else{
+                            $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                                 INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                INNER JOIN sv_ticket_item_details ON sv_ticket_header.sv_number = sv_ticket_item_details.sv_number
+																WHERE gagamit.user_name = ? AND sv_ticket_item_details.Part_No_Quantity like ?																
+						                                        ORDER BY sv_ticket_header.date_created DESC");
+                            $result->execute(array($usernamex,'%'.$searchme.'%'));
+                        }
+                        break;
+
+
+                    default:
+                        $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header
+                                                               INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                                                                INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                                                                WHERE gagamit.user_name = ? ORDER BY sv_ticket_header.date_created DESC");
+                        $result->execute(array($usernamex));
+                        break;
+                }
+
+            }else{
+
+                $result = DB::getInstance()->prepare("SELECT DISTINCT * FROM sv_ticket_header
+                        INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID = sv_ticket_details.log_ID
+                        INNER JOIN gagamit ON sv_ticket_header.assignto = gagamit.email OR gagamit.position=0
+                        WHERE gagamit.user_name = ? ORDER BY sv_ticket_header.date_created DESC");
+                $result->execute(array($usernamex));
+            }
+            break;
+
+  }
+?>

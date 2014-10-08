@@ -1,0 +1,90 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: AndroVonryan
+ * Date: 9/22/14
+ * Time: 8:33 PM
+ */
+
+class Ticketcloser {
+
+    private $isSuccess = false;
+
+    public function __construct(){
+
+    }
+
+    /**
+     * Closed the Open ticket
+     *
+     * @param $ticketNumber
+     *
+     * @return int
+     *
+     * -1 - $ticketNumber is not yet assign
+     * 0 - Ticket is already closed
+     * 1 - Successfully Updated
+     *
+     */
+
+    public function closeTicket($ticketNumber){
+
+        if(isset( $ticketNumber )) {
+
+            if($this->checkTicketIfNotClosed($ticketNumber)){
+
+
+                $result = DB::getInstance()->prepare("UPDATE sv_ticket_header SET isClosed = 1 WHERE sv_number = ? ");
+                $result->execute(array($ticketNumber));
+
+                if($result){
+
+                    $this->isSuccess = true;
+                    // "Sucessfull Updated";
+                    return 1;
+                }
+
+            }else{
+                // "checkTicketIfNotClosed return false";
+                return 0;
+            }
+
+
+
+
+
+        }else{
+            // "Service Ticket ID has no value";
+            return -1;
+        }
+
+    }
+
+    private function checkTicketIfNotClosed($ticketID){
+
+
+        $result = DB::getInstance()->prepare("SELECT isClosed FROM sv_ticket_header WHERE sv_number = ?");
+
+        $result->execute(array($ticketID));
+
+        if($result->rowCount()){
+
+            foreach($result as $row){
+
+                $status = $row['isClosed'];
+
+                return ($status != "1") ? true : false;
+
+            }
+
+        }else{
+            return false;
+        }
+
+
+
+    }
+
+}
+
+

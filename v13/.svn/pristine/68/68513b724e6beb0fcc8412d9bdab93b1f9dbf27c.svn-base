@@ -1,0 +1,336 @@
+<?php
+include "init.php";
+include("functions/loggedIn.php");
+//include("asset/DB.php");
+
+$tabledata = "";
+$result="";
+$searchx="";
+$stat="";
+if(isset($_SESSION['username'])){
+
+	
+///////////////////////////////////// LOAD MYWORKORDER ////////////////////////////////////////////////////
+
+
+                    $result = DB::getInstance()->prepare("SELECT * FROM wo_ticket_details 
+				              INNER JOIN sv_ticket_header ON wo_ticket_details.log_No = sv_ticket_header.log_ID
+                              INNER JOIN sv_ticket_details ON wo_ticket_details.log_No = sv_ticket_details.log_ID
+                              INNER JOIN gagamit ON wo_ticket_details.assignToEngineer = gagamit.email 
+							  WHERE gagamit.user_name = ? AND gagamit.position = 2");
+                    $result->execute(array($_SESSION['username']));
+					
+
+
+			        if(isset($_POST['searchbutton'])){		  
+					            $searchx = $_POST['searchme'];
+								
+							switch($_POST['filterr']){
+								 
+								   case 'TicketNo':
+
+					       $result = DB::getInstance()->prepare("SELECT * FROM wo_ticket_details 
+				              INNER JOIN sv_ticket_header ON wo_ticket_details.log_No = sv_ticket_header.log_ID
+                              INNER JOIN sv_ticket_details ON wo_ticket_details.log_No = sv_ticket_details.log_ID
+                              INNER JOIN gagamit ON wo_ticket_details.assignToEngineer = gagamit.email 
+							  WHERE gagamit.user_name = ? 
+							  AND wo_ticket_details.sv_number like ?
+							  AND sv_ticket_header.isClosed = 0
+							  AND gagamit.position = 2");
+                           $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));	
+	  
+									  break;
+								   case 'Subject':
+
+					       $result = DB::getInstance()->prepare("SELECT * FROM wo_ticket_details 
+				              INNER JOIN sv_ticket_header ON wo_ticket_details.log_No = sv_ticket_header.log_ID
+                              INNER JOIN sv_ticket_details ON wo_ticket_details.log_No = sv_ticket_details.log_ID
+                              INNER JOIN gagamit ON wo_ticket_details.assignToEngineer = gagamit.email 
+							  WHERE gagamit.user_name = ? 
+							  AND sv_ticket_details.subject like ?
+							  AND sv_ticket_header.isClosed = 0
+							  AND gagamit.position = 2");
+                           $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));					 
+	  
+									  break;
+								   default:
+								   
+                           $result = DB::getInstance()->prepare("SELECT * FROM wo_ticket_details 
+				              INNER JOIN sv_ticket_header ON wo_ticket_details.log_No = sv_ticket_header.log_ID
+                              INNER JOIN sv_ticket_details ON wo_ticket_details.log_No = sv_ticket_details.log_ID
+                              INNER JOIN gagamit ON wo_ticket_details.assignToEngineer = gagamit.email 
+							  WHERE gagamit.user_name = ? AND gagamit.position = 2");
+                          $result->execute(array($_SESSION['username']));
+								   	  
+                                      break;
+								                  }
+					             }
+
+                  
+
+
+
+
+
+///////////////////////////////////// IF PULLOUT AND RETURNED IS PRESSED ////////////////////////////////////////////////////								  
+
+if(isset($_GET['status'])){		
+         
+		 $uname = $_SESSION['username'];
+		
+		   
+		switch($_GET['status']){
+					
+			case 'pullout':
+			
+									     $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+											INNER JOIN tb_pullout ON sv_ticket_header.log_ID = tb_pullout.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? ");
+                                         $result->execute(array($_SESSION['username']));
+										 
+			        if(isset($_POST['searchbutton'])){		  
+					            $searchx = $_POST['searchme'];
+								
+							switch($_POST['filterr']){
+								 
+								   case 'TicketNo':
+								         $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+											INNER JOIN tb_pullout ON sv_ticket_header.log_ID = tb_pullout.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? AND tb_pullout.sv_number like ? ");
+                                         $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));
+	  
+									  break;
+								   case 'Subject':
+								         $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+										INNER JOIN tb_pullout ON sv_ticket_header.log_ID = tb_pullout.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? AND sv_ticket_details.subject like ? ");
+                                         $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));
+	  
+									  break;
+
+								                  }
+					             }
+
+                      break;
+	
+			case 'returned':
+
+
+								         $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+											INNER JOIN tb_return ON sv_ticket_header.log_ID = tb_return.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? ");
+                                         $result->execute(array($_SESSION['username']));
+
+
+			        if(isset($_POST['searchbutton'])){		  
+					            $searchx = $_POST['searchme'];
+								
+							switch($_POST['filterr']){
+								 
+								   case 'TicketNo':
+								         $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+											INNER JOIN tb_return ON sv_ticket_header.log_ID = tb_return.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? AND tb_return.sv_number like ?");
+                                         $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));
+	  
+									  break;
+								   case 'Subject':
+								         $result = DB::getInstance()->prepare("SELECT * FROM sv_ticket_header 
+				              INNER JOIN wo_ticket_details ON sv_ticket_header.log_ID=wo_ticket_details.log_No
+                              INNER JOIN sv_ticket_details ON sv_ticket_header.log_ID=sv_ticket_details.log_ID
+											INNER JOIN tb_return ON sv_ticket_header.log_ID = tb_return.log
+                                            INNER JOIN gagamit WHERE gagamit.user_name = ? AND sv_ticket_details.subject like ?");
+                                         $result->execute(array($_SESSION['username'],'%'.$searchx.'%'));
+	  
+									  break;
+
+								                  }
+					             }
+
+                      break;
+
+		default :
+                    $result = DB::getInstance()->prepare("SELECT * FROM wo_ticket_details 
+				              INNER JOIN sv_ticket_header ON wo_ticket_details.log_No = sv_ticket_header.log_ID
+                              INNER JOIN sv_ticket_details ON wo_ticket_details.log_No = sv_ticket_details.log_ID
+                              INNER JOIN gagamit ON wo_ticket_details.assignToEngineer = gagamit.email 
+							  WHERE gagamit.user_name = ? AND gagamit.position = 2");
+                    $result->execute(array($_SESSION['username']));
+
+	    break;
+		
+		}
+		
+		  $stat=$_GET['status'];
+
+	}
+
+
+
+   //  $result = DB::getInstance()->query($sql);
+    echo $loginSuccess = FALSE;
+    if($result->rowCount()){
+
+        while ($row = $result->fetch(PDO::FETCH_ASSOC)){
+
+				$ticketID = $row['sv_number'];
+				$datecreated = $row['date_created'];
+				$from = $row['ticketSender'];
+				$assignto = $row['assignto'];
+				$subject = $row['subject'];
+				$priority = $row['priority'];
+				$status = $row['status'];
+               $log = $row['log_ID'];
+
+
+				/*Check the position of Username
+					CSR 		= 0; can create/close ticket
+					Supervisor 	= 1; can create work orde 
+					Engineer 	= 2; can responde to work order.
+									 create returnslip and pull-out
+
+				*/
+           if($row['isAssign']=1){
+                 //   echo 'Already Assign';
+               }else{
+                  //  echo 'Not Yet Assign';
+              }
+
+           switch($stat){
+  			     	case 'returned':
+					 	$ticketURL = 'returnslipPDF.php?id=';
+						break;
+	  				case 'pullout':
+						$ticketURL = 'pulloutPDF.php?id=';
+  						break;
+					default:
+						$ticketURL = 'workorder.php?id=';
+						break;
+		 		}
+
+				$tabledata .= '
+				<tr id="ticketData">
+                    	<th style="width:85px; height:25px;"><a href="'.$ticketURL.''.$ticketID.'&&log='.$log.'" style="color:#0099FF;">'.$ticketID.'</a></th>
+                        <th style="width:85px; height:25px;">'.$datecreated.'</th>
+                        <th style=" height:25px;"><a href="'.$ticketURL.''.$ticketID.'&&log='.$log.'" style="color:#0099FF;">'.$subject.'</a></th>
+                        <th style="width:195px; height:25px;">'.$from.'</th>
+                        <th style="width:72px; height:25px;">'.$priority.'</th>
+                        <th style="width:140px; height:25px;">'.$assignto.'</th>
+                    </tr>
+				';
+
+			}
+
+
+
+
+	}
+
+
+
+}
+
+?>
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Workorder</title>
+<link type="text/css" rel="stylesheet" href="css/myticket.css" />
+
+<link rel="stylesheet" type="text/css" href="css/menu2.css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="body">
+
+ 	<?php include "includes/header.php" ?>
+
+   		<div id="content">
+
+        	<!-- START OF NAVBAR -->
+        	<!--	<?php include("includes/nav.php"); ?> -->
+           <div class="cssmenu">
+            	
+   					<a href='dashboard.php'><span>Dashboard</span></a>
+   					<a href='myworkorder.php' class="current"><span>Work Order</span></a>
+               
+            </div>
+            <!-- END OF NAVBAR --->
+
+            <!-- START OF NAVBAR2 -->
+              <!--	<?php include("includes/ticket_navigation.php"); ?>-->
+
+
+        <?php include "includes/Access.php"; ?>
+
+            <!-- END OF NAVBAR2 -->
+
+            <!-- START OF SEARCHBAR -->
+            <div id="searchbar">
+            	<form action="" method="POST">
+                       <input type="text" name="searchme">
+                          <select id="input" name="filterr">
+                	        <option>--Filter by--</option>
+                            <option value="TicketNo">TicketNo</option>
+                            <option value="Subject">Subject</option>
+                         </select>
+                    <input type="submit" name="searchbutton" value="search" class="myButton">
+                
+                </form>
+                
+            </div>
+            
+            <!-- END OF SEARCHBAR -->
+            <div id="tickets">
+            	
+                <Table style="margin-left:auto; margin-right:auto;">
+            		<tr>
+                    	<th id="opentickets">Assigned Tickets</th>
+                    </tr>
+           		</Table>
+            	
+                <table id="table">
+                	
+                    <tr>
+                    	<th style="width:85px; height:25px;">Ticket</th>
+                        <th style="width:85px; height:25px;">Date</th>
+                        <th style="width:300px; height:25px;">Subject</th>
+                        <th style="width:195px; height:25px;">From</th>
+                        <th style="width:72px; height:25px;">Priority</th>
+                        <th style="width:140px; height:25px;">Assigned To</th>
+                    </tr>
+                    <tr>
+                    	<?php echo $tabledata; ?>
+                    </tr>
+                </table>
+            </div>
+        
+        <!-- end of content -->
+        </div>
+        
+        
+    
+    <!-- end of body -->    
+    </div>
+<br>
+    
+    <?php include("includes/footer.php"); ?>
+
+<!-- end of container -->
+</div>
+</body>
+</html>

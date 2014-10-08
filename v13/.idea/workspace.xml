@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49937a3e-f738-4372-9777-1524d5b2eb7a" name="Default" comment="" />
+    <ignored path="SteadFastServiceTicket.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SteadFastServiceTicket" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="8988">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="29" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2373">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="42" selection-start="360" selection-end="360" vertical-scroll-proportion="-7.7" vertical-offset="0" max-vertical-offset="588">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workorder.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/workorder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.19961977" vertical-offset="0" max-vertical-offset="11277">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myassignticket.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myassignticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="252" column="0" selection-start="17535" selection-end="17535" vertical-scroll-proportion="-4.233333" vertical-offset="5165" max-vertical-offset="10185">
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#Table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1409884639563" expanded="true" signature="573:1125" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="1291:1881" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="2175:2727" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="2893:3482" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="3718:4270" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="4459:4863" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="5220:5770" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="5936:6524" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="6818:7368" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="7534:8121" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="8357:8907" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="9096:9490" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="9848:10397" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="10563:11150" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="11444:11993" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="12159:12745" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="12981:13530" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="13719:14112" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="14474:15028" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="15194:15786" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="16080:16634" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="16800:17391" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="17627:18181" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="18370:18768" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="19119:19634" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="19800:20353" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="20647:21162" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="21328:21880" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="22116:22585" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884639563" expanded="true" signature="22774:23123" placeholder="SELECT * FRO..sv_ticket_header..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orders.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/orders.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="10206">
+              <folding>
+                <element signature="e#6#93#0" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#Table#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1409884375825" expanded="true" signature="661:1213" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="1379:1969" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="2263:2815" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="2981:3570" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="3806:4358" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="4547:4951" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="5308:5858" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="6024:6612" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="6906:7456" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="7622:8209" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="8445:8995" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="9184:9578" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="9936:10485" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="10651:11238" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="11532:12081" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="12247:12833" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="13069:13618" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="13807:14200" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="14562:15116" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="15282:15874" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="16168:16722" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="16888:17479" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="17715:18269" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="18458:18856" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="19207:19722" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="19888:20441" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="20735:21250" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="21416:21968" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="22204:22673" placeholder="SELECT * FRO..sv_ticket_header..." />
+                <marker date="1409884375825" expanded="true" signature="22862:23211" placeholder="SELECT * FRO..sv_ticket_header..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changepass.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changepass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2184">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="closedticket.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/closedticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="407" column="9" selection-start="11171" selection-end="11171" vertical-scroll-proportion="88.566666" vertical-offset="11204" max-vertical-offset="11760">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="2" selection-start="143" selection-end="143" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="378">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newticket.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.7" vertical-offset="0" max-vertical-offset="10878">
+              <folding>
+                <marker date="1409879963148" expanded="true" signature="2136:2289" placeholder="INSERT INTO ..." />
+                <marker date="1409879963148" expanded="true" signature="2846:2888" placeholder="SELECT * fro..sv_ticket_details_attachment..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/myworkorder.php" />
+        <option value="$PROJECT_DIR$/asset/not working file attachment no OOP.txt" />
+        <option value="$PROJECT_DIR$/closedticket.php" />
+        <option value="$PROJECT_DIR$/functions/addComment.php" />
+        <option value="$PROJECT_DIR$/classes/Person.class.php" />
+        <option value="$PROJECT_DIR$/classes/Redirect.php" />
+        <option value="$PROJECT_DIR$/functions/loggedIn.php" />
+        <option value="$PROJECT_DIR$/classes/Ticketreplay.php" />
+        <option value="$PROJECT_DIR$/myticket.php" />
+        <option value="$PROJECT_DIR$/managestaff.php" />
+        <option value="$PROJECT_DIR$/createuser.php" />
+        <option value="$PROJECT_DIR$/asset/steadFast.class.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/newticket.php" />
+        <option value="$PROJECT_DIR$/ticket.php" />
+        <option value="$PROJECT_DIR$/orders.php" />
+        <option value="$PROJECT_DIR$/myassignticket.php" />
+        <option value="$PROJECT_DIR$/init.php" />
+        <option value="$PROJECT_DIR$/workorder.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteadFastServiceTicket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteadFastServiceTicket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.PHP" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49937a3e-f738-4372-9777-1524d5b2eb7a" name="Default" comment="" />
+      <created>1409366016955</created>
+      <updated>1409366016955</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29154077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25377643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/createuser.php</url>
+          <line>1</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="350" column="45" selection-start="27907" selection-end="27907" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9912">
+          <folding>
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="22" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="3171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="9" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11361" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="46" selection-start="6041" selection-end="6041" vertical-scroll-proportion="0.0" vertical-offset="4158" max-vertical-offset="11844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/steadFast.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="40" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.0" vertical-offset="1701" max-vertical-offset="10059" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="1428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ItemDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/suggest.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1659" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/attachment.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2373" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Person.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="987" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/serviceTicket.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworkorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="17" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4641" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/not working file attachment no OOP.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1869" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="9" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.0" vertical-offset="1910" max-vertical-offset="11361" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="46" selection-start="6041" selection-end="6041" vertical-scroll-proportion="0.0" vertical-offset="4095" max-vertical-offset="11844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/steadFast.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="42" selection-start="11467" selection-end="11467" vertical-scroll-proportion="0.0" vertical-offset="6237" max-vertical-offset="10059" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/serviceTicket.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworkorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/steadFast.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10059" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/serviceTicket.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/serviceTicket.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.7659963" vertical-offset="1071" max-vertical-offset="3234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/not working file attachment no OOP.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1869" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="1428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ItemDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/attachment.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="104" selection-end="104" vertical-scroll-proportion="0.2625" vertical-offset="0" max-vertical-offset="2373" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/suggest.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1659" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/addComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="38" selection-start="316" selection-end="337" vertical-scroll-proportion="-0.46666667" vertical-offset="406" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/loggedIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="8" selection-end="8" vertical-scroll-proportion="-1.4" vertical-offset="0" max-vertical-offset="357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Person.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="51" selection-start="1427" selection-end="1453" vertical-scroll-proportion="-0.7" vertical-offset="1155" max-vertical-offset="2394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/managestaff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="8064">
+          <folding>
+            <marker date="1409813096946" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..gagamit..." />
+            <marker date="1409813096946" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..gagamit..." />
+            <marker date="1409813096946" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..gagamit..." />
+            <marker date="1409813096946" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..gagamit..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="20" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="7980">
+          <folding>
+            <marker date="1409813269725" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409813269725" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="987">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Ticketreplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="95" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="2226">
+          <folding>
+            <marker date="1409811692929" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_replay..." />
+            <marker date="1409811692929" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/steadFast.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="58" selection-start="11074" selection-end="11074" vertical-scroll-proportion="0.0" vertical-offset="5690" max-vertical-offset="10101">
+          <folding>
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="SELECT sv_nu..sv_ticket_header..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="SELECT work_..wo_ticket_details..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="SELECT fulln..gagamit..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="SELECT user_..gagamit..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="SELECT user_..gagamit..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409820767801" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="27" selection-end="27" vertical-scroll-proportion="0.07984791" vertical-offset="0" max-vertical-offset="3255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Redirect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="143" selection-end="143" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="378">
+          <folding>
+            <element signature="e#6#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.7" vertical-offset="0" max-vertical-offset="10878">
+          <folding>
+            <marker date="1409879963148" expanded="true" signature="2136:2289" placeholder="INSERT INTO ..." />
+            <marker date="1409879963148" expanded="true" signature="2846:2888" placeholder="SELECT * fro..sv_ticket_details_attachment..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="23" selection-start="868" selection-end="868" vertical-scroll-proportion="-2.3555133" vertical-offset="2268" max-vertical-offset="14175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="8988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changepass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/closedticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="407" column="9" selection-start="11171" selection-end="11171" vertical-scroll-proportion="88.566666" vertical-offset="11204" max-vertical-offset="11760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2373">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="0" selection-end="31605" vertical-scroll-proportion="-1.4" vertical-offset="0" max-vertical-offset="10080">
+          <folding>
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409812730835" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sv_ticket_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworkorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="22" selection-start="3939" selection-end="3939" vertical-scroll-proportion="-1.4" vertical-offset="2037" max-vertical-offset="6048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="-4.9" vertical-offset="0" max-vertical-offset="10206">
+          <folding>
+            <element signature="e#6#93#0" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#Table#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1409884375825" expanded="true" signature="661:1213" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="1379:1969" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="2263:2815" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="2981:3570" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="3806:4358" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="4547:4951" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="5308:5858" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="6024:6612" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="6906:7456" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="7622:8209" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="8445:8995" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="9184:9578" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="9936:10485" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="10651:11238" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="11532:12081" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="12247:12833" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="13069:13618" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="13807:14200" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="14562:15116" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="15282:15874" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="16168:16722" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="16888:17479" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="17715:18269" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="18458:18856" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="19207:19722" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="19888:20441" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="20735:21250" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="21416:21968" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="22204:22673" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884375825" expanded="true" signature="22862:23211" placeholder="SELECT * FRO..sv_ticket_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myassignticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="252" column="0" selection-start="17535" selection-end="17535" vertical-scroll-proportion="-4.233333" vertical-offset="5165" max-vertical-offset="10185">
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#Table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1409884639563" expanded="true" signature="573:1125" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="1291:1881" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="2175:2727" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="2893:3482" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="3718:4270" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="4459:4863" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="5220:5770" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="5936:6524" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="6818:7368" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="7534:8121" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="8357:8907" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="9096:9490" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="9848:10397" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="10563:11150" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="11444:11993" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="12159:12745" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="12981:13530" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="13719:14112" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="14474:15028" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="15194:15786" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="16080:16634" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="16800:17391" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="17627:18181" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="18370:18768" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="19119:19634" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="19800:20353" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="20647:21162" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="21328:21880" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="22116:22585" placeholder="SELECT * FRO..sv_ticket_header..." />
+            <marker date="1409884639563" expanded="true" signature="22774:23123" placeholder="SELECT * FRO..sv_ticket_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="42" selection-start="360" selection-end="360" vertical-scroll-proportion="-7.7" vertical-offset="0" max-vertical-offset="588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.19961977" vertical-offset="0" max-vertical-offset="11277">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

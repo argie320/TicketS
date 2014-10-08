@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	border:0;
+	margin:0;
+	
+	}
+
+#container {	
+	clear: both;
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	border-width: 0px;
+	border-style: solid;
+	background-color: #eeeeee;
+}
+
+#body {
+	width: 960px;
+	height:1000px;
+	border-width: 1px;
+	border-style: solid;
+	border-color:#666;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFF;
+	box-shadow: 4px 4px 1px #888888;
+	
+	
+	}
+	
+#header {
+	height:75px;
+	width:960px;
+	margin: 1px;
+	background-image:url(logo.png);
+	border-bottom:1px solid #666;
+	
+	
+	
+	
+	}
+
+#logout {
+	height:35px;
+	width:400px;
+	margin-right:10px;
+	margin-top: 8px;
+	padding-top:10px;
+	float:right;
+	border:1px solid #666;
+	text-align:center;
+	background-color: #eeeeee;
+	
+	
+	}
+	
+#content {
+	width:960px;
+	height:500px;
+	border: 0px solid black;
+	}
+	
+#navbar {
+	height: 40px;
+	width:960px;
+	border: 0px solid black;
+	
+	}
+	
+#navbar2 {
+	height: 40px;
+	width:960px;
+	border: 0px solid black;
+	border-bottom:1px solid #666;
+	margin-top: 5px;
+	}
+	
+#navbar3 {
+	margin-left:10px;
+	
+	}
+	
+A:link { COLOR: black; TEXT-DECORATION: none;  }
+A:visited { COLOR: black; TEXT-DECORATION: none;  }
+A:active { COLOR: black; TEXT-DECORATION: none; }
+A:hover { COLOR: #666; TEXT-DECORATION: none;  }
+	
+#searchbar {
+	height: 65px;
+	width:960px;
+	border: 0px solid black;
+	}
+	
+#searchbar input  {
+	
+	border: 1px solid #666666;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	width: 200px;	
+	margin-left:10PX;
+ 	font:11pt century gothic;
+	
+}
+
+#searchbar input[type="submit"] {
+	border: 1px solid #666666;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	width: 100px;	
+	margin-left:10PX;
+ 	font:11pt century gothic;
+	
+	
+}
+
+#refresh {
+	float:right;
+	margin-right: 10px;
+}
+
+#table,th,td
+{
+	border:1px solid #666;
+	border-collapse:collapse;
+	margin:auto;
+	font-family:century gothic;
+	font-size:10pt;
+	text-align:center;
+}
+	
+th,td
+{
+	padding:5px;
+	
+}
+
+#opentickets {
+	border:0px;
+	width:930px;
+	text-align:left;
+	background-color:#333;
+	color:#FFF;
+	font-size:13px;
+	}
+
+#label {
+	margin-left: 10px;
+	font: 10pt century gothic;
+	color:#666;
+	}
+	
+#label2 {
+	margin-left: 20px;
+	font: 20pt century gothic;
+	color:#333;
+	}	
+	
+#table2 {margin-left:10px}
+
+#input  {
+	
+	border: 1px solid #666666;
+	width: 200px;	
+	margin-left: 10px;
+ 	font:10pt century gothic;
+	border-bottom:#333;
+}
+
+#submit {
+	margin-left: 20px;
+	font: 10pt century gothic;
+	color:#666;
+	}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+<!-- CSS CODE FOR TAB TAB TAB TAB-->
+<style type="text/css">
+.tabs {
+  position: relative;   
+  min-height: 265px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+  font:10pt century gothic;
+  color:#666;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 3px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}

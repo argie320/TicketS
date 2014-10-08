@@ -1,0 +1,476 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.4.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 27, 2014 at 11:35 PM
+-- Server version: 5.6.11
+-- PHP Version: 5.5.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `steadfast`
+--
+CREATE DATABASE IF NOT EXISTS `steadfast` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `steadfast`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gagamit`
+--
+
+CREATE TABLE IF NOT EXISTS `gagamit` (
+  `registration_date` datetime DEFAULT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `pass_word` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `fullname` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `mobile` varchar(255) DEFAULT NULL,
+  `position` int(1) NOT NULL,
+  `company` varchar(255) DEFAULT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `type` int(11) DEFAULT NULL,
+  `register` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `user_name` (`user_name`,`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `gagamit`
+--
+
+INSERT INTO `gagamit` (`registration_date`, `user_name`, `pass_word`, `email`, `fullname`, `phone`, `mobile`, `position`, `company`, `ID`, `type`, `register`) VALUES
+('2014-07-24 17:40:21', 'csr', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'derechoandro@gmail.com', 'Andro Derecho', '093234234', '03992342', 0, 'Atomit Biz Soln', 1, 1, 0),
+('2014-08-01 14:36:42', 'supervisor', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'derechoandro@yahoo.com', 'Melaine', '23423423', '9325551294', 1, 'Jump Solutions Inc.', 2, 0, 0),
+('2014-08-01 14:36:42', 'engineer_vonryan', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', 'andro.derecho@atomitsoln.com', 'Vonryan', '23423423', '9325551294', 2, 'Jump Solutions Inc.', 3, 0, 0),
+('2014-09-04 12:53:33', 'argiecsr', 'fba9bcec58ec16c59389ab110f33df597d6406868e1144ccc662ff58ac84088a', 'blah@gmail.com', 'csrargie', '', '9999999999', 0, 'Jump Solutions Inc.', 14, 0, 0),
+('2014-09-11 09:19:12', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'admin@gmail.com', 'admin', '', '9999999999', 3, 'Jump Solutions Inc.', 15, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sv_ticket_details`
+--
+
+CREATE TABLE IF NOT EXISTS `sv_ticket_details` (
+  `sv_number` int(11) NOT NULL,
+  `log_ID` int(20) NOT NULL AUTO_INCREMENT,
+  `subject` varchar(255) NOT NULL,
+  `issue` varchar(255) NOT NULL,
+  `remarks` varchar(255) NOT NULL,
+  PRIMARY KEY (`log_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `sv_ticket_details`
+--
+
+INSERT INTO `sv_ticket_details` (`sv_number`, `log_ID`, `subject`, `issue`, `remarks`) VALUES
+(114563, 1, 'Defective Laptop', 'Mabilis ma lowbat', 'Check the Battery'),
+(114563, 2, 'Defective RAM', 'Cannot read', 'If cannot repair, subject for replacement of RAM'),
+(515961, 3, 'subject cpu', 'issue cpu', 'remarks cpu');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sv_ticket_details_attachment`
+--
+
+CREATE TABLE IF NOT EXISTS `sv_ticket_details_attachment` (
+  `sv_number` int(11) NOT NULL,
+  `attachment` text NOT NULL,
+  `date_uploaded` date NOT NULL,
+  `reply_sv_number` int(11) NOT NULL,
+  `uniqid` text NOT NULL,
+  `logs` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`logs`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+--
+-- Dumping data for table `sv_ticket_details_attachment`
+--
+
+INSERT INTO `sv_ticket_details_attachment` (`sv_number`, `attachment`, `date_uploaded`, `reply_sv_number`, `uniqid`, `logs`) VALUES
+(114563, '1969244_822135944484893_1368285939951747983_n.jpg', '2014-09-26', 0, '5425d0cf46ba44.19015236.jpg', 16),
+(515961, '1908095_937284502952736_922675498694680676_n.jpg', '2014-09-27', 0, '54266bd220f1c5.77767936.jpg', 19);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sv_ticket_header`
+--
+
+CREATE TABLE IF NOT EXISTS `sv_ticket_header` (
+  `sv_number` int(11) NOT NULL,
+  `log_ID` int(20) NOT NULL AUTO_INCREMENT,
+  `source` varchar(25) NOT NULL,
+  `status` varchar(25) NOT NULL,
+  `assignto` varchar(50) NOT NULL,
+  `details` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL,
+  `company` varchar(50) NOT NULL,
+  `reference` varchar(100) NOT NULL,
+  `duedate` date NOT NULL,
+  `priority` varchar(25) NOT NULL,
+  `ticketID` int(10) NOT NULL,
+  `response` int(1) NOT NULL DEFAULT '0',
+  `help_topic` varchar(20) NOT NULL,
+  `slaplan` varchar(16) NOT NULL,
+  `duetime` time NOT NULL,
+  `ticketSender` varchar(200) NOT NULL,
+  `ticketSenderEmail` varchar(255) NOT NULL,
+  `time_created` time NOT NULL,
+  `date_created` date NOT NULL,
+  `isOverdue` int(11) NOT NULL,
+  `isAssign` int(1) NOT NULL DEFAULT '0',
+  `isClosed` int(1) NOT NULL,
+  PRIMARY KEY (`log_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `sv_ticket_header`
+--
+
+INSERT INTO `sv_ticket_header` (`sv_number`, `log_ID`, `source`, `status`, `assignto`, `details`, `department`, `company`, `reference`, `duedate`, `priority`, `ticketID`, `response`, `help_topic`, `slaplan`, `duetime`, `ticketSender`, `ticketSenderEmail`, `time_created`, `date_created`, `isOverdue`, `isAssign`, `isClosed`) VALUES
+(114563, 1, 'Phone', 'Open', 'derechoandro@yahoo.com', '', 'External', 'Stead Fast Solutions Inc.', 'IBM', '2014-09-27', 'High', 114563, 0, 'Support', 'Default SLA(48hr', '12:00:00', 'csr', 'derechoandro@gmail.com', '13:47:11', '2014-09-26', 0, 1, 1),
+(114563, 2, 'Phone', 'Open', 'derechoandro@yahoo.com', '', 'External', 'Stead Fast Solutions Inc.', 'IBM', '2014-09-27', 'Normal', 114563, 0, 'Support', 'Default SLA(48hr', '12:00:00', 'csr', 'derechoandro@gmail.com', '15:20:25', '2014-09-26', 0, 1, 0),
+(515961, 3, 'Email', 'Open', 'derechoandro@yahoo.com', '', 'External', 'Forefront Innovative Technologies Inc.', 'ACER', '0000-00-00', 'High', 515961, 0, 'Support', '0', '22:55:00', 'csr', 'derechoandro@gmail.com', '00:48:34', '2014-09-27', 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sv_ticket_item_details`
+--
+
+CREATE TABLE IF NOT EXISTS `sv_ticket_item_details` (
+  `item` int(11) NOT NULL DEFAULT '1',
+  `Unit_Brand` varchar(20) NOT NULL,
+  `Unit_Model` varchar(60) NOT NULL,
+  `Machine_Serial_No` varchar(20) NOT NULL,
+  `Part_No_Quantity` varchar(20) NOT NULL,
+  `Quantity` int(11) NOT NULL DEFAULT '1',
+  `Warranty` varchar(20) NOT NULL,
+  `sv_number` int(11) NOT NULL,
+  `log_id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `sv_ticket_item_details`
+--
+
+INSERT INTO `sv_ticket_item_details` (`item`, `Unit_Brand`, `Unit_Model`, `Machine_Serial_No`, `Part_No_Quantity`, `Quantity`, `Warranty`, `sv_number`, `log_id`) VALUES
+(1, 'IBM', 'Laptop', 'IBM101', 'SN34234', 1, 'Under Warranty', 114563, 13),
+(1, 'ACER', 'CPU', 'Acer21323', 'sn2534252', 1, 'Under Warranty', 515961, 16);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sv_ticket_replay`
+--
+
+CREATE TABLE IF NOT EXISTS `sv_ticket_replay` (
+  `sv_number` int(11) NOT NULL,
+  `logs` int(11) NOT NULL AUTO_INCREMENT,
+  `message` text NOT NULL,
+  `sender` varchar(20) NOT NULL,
+  `reciever` varchar(20) NOT NULL,
+  `DatePosted` datetime NOT NULL,
+  PRIMARY KEY (`logs`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=38 ;
+
+--
+-- Dumping data for table `sv_ticket_replay`
+--
+
+INSERT INTO `sv_ticket_replay` (`sv_number`, `logs`, `message`, `sender`, `reciever`, `DatePosted`) VALUES
+(114563, 34, 'this ticket has been closed', 'supervisor', '', '2014-09-26 15:55:21'),
+(114563, 35, 'blah blah', 'supervisor', '', '2014-09-26 16:00:50'),
+(114563, 36, 'blah blah', 'supervisor', '', '2014-09-26 16:01:15'),
+(114563, 37, 'erherheh', 'supervisor', '', '2014-09-26 16:01:22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbcustomer`
+--
+
+CREATE TABLE IF NOT EXISTS `tbcustomer` (
+  `customer_snum` varchar(11) DEFAULT NULL,
+  `customer_company` text NOT NULL,
+  `customer_attention` text NOT NULL,
+  `customer_name` text NOT NULL,
+  `customer_code` varchar(255) DEFAULT NULL,
+  `customer_email` varchar(255) DEFAULT NULL,
+  `customer_cnum` varchar(255) DEFAULT NULL,
+  `customer_fnum` varchar(255) DEFAULT NULL,
+  `customer_baddr` varchar(255) DEFAULT NULL,
+  `customer_daddr` varchar(255) DEFAULT NULL,
+  `customer_contact` varchar(255) DEFAULT NULL,
+  `customer_terms` varchar(255) DEFAULT NULL,
+  `customer_vat` varchar(255) DEFAULT NULL,
+  `sv_number` int(11) NOT NULL,
+  `logs` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`logs`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=206 ;
+
+--
+-- Dumping data for table `tbcustomer`
+--
+
+INSERT INTO `tbcustomer` (`customer_snum`, `customer_company`, `customer_attention`, `customer_name`, `customer_code`, `customer_email`, `customer_cnum`, `customer_fnum`, `customer_baddr`, `customer_daddr`, `customer_contact`, `customer_terms`, `customer_vat`, `sv_number`, `logs`) VALUES
+('114563', 'Stead Fast Solutions Inc.', '', 'mariz', NULL, 'mariz@yahoo.com', '09999257871', '9370353', 'Alabang, Muntinlupa', NULL, 'argie', NULL, NULL, 114563, 201),
+('953338', 'Forefront Innovative Technologies Inc.', '', 'Carlo', NULL, 'carlo@yahoo.com', '9043829038', '2432342', 'Alabang, Muntinlupa City', NULL, 'Argie', NULL, NULL, 953338, 203),
+('515961', 'Forefront Innovative Technologies Inc.', '', 'carlo', NULL, 'carlo@yahoo.com', '374857346734', '235235', 'T.S Cruz, Almanza Dos, Las pInas', NULL, 'Argie', NULL, NULL, 515961, 205);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblitem`
+--
+
+CREATE TABLE IF NOT EXISTS `tblitem` (
+  `ctrl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `status` text NOT NULL,
+  `sq_ini_id` int(11) NOT NULL,
+  `sq_detail` varchar(255) NOT NULL,
+  `company_id` int(11) NOT NULL,
+  `brand` text NOT NULL,
+  `category` text NOT NULL,
+  `availability` text NOT NULL,
+  `itemname` text NOT NULL,
+  `quantity` int(255) NOT NULL,
+  `uom` varchar(255) NOT NULL,
+  `price` int(255) NOT NULL,
+  `total` text NOT NULL,
+  `drp` varchar(255) NOT NULL,
+  `margin` varchar(255) NOT NULL,
+  `vattype` text NOT NULL,
+  `free1` text NOT NULL,
+  `amount1` int(255) NOT NULL,
+  `free2` text NOT NULL,
+  `amount2` int(255) NOT NULL,
+  `free3` text NOT NULL,
+  `amount3` int(255) NOT NULL,
+  `note` text NOT NULL,
+  PRIMARY KEY (`ctrl_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_company`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_company` (
+  `ctrl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `company` varchar(255) NOT NULL,
+  PRIMARY KEY (`ctrl_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_login`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_login` (
+  `ctrl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(255) NOT NULL,
+  `lname` varchar(255) NOT NULL,
+  `mname` varchar(255) NOT NULL,
+  `cnum` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `uname` varchar(255) NOT NULL,
+  `pass` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
+  `level` int(11) NOT NULL,
+  PRIMARY KEY (`ctrl_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_pullout`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_pullout` (
+  `log` int(20) NOT NULL,
+  `sv_number` int(11) NOT NULL,
+  `pullout_type` varchar(255) NOT NULL,
+  `pullout_remarks` varchar(255) NOT NULL,
+  `preparedBy` varchar(255) NOT NULL,
+  `pulloutBy` varchar(255) NOT NULL,
+  `pulloutDate` varchar(50) NOT NULL,
+  `pulloutNo` varchar(255) NOT NULL,
+  PRIMARY KEY (`log`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_pullout`
+--
+
+INSERT INTO `tb_pullout` (`log`, `sv_number`, `pullout_type`, `pullout_remarks`, `preparedBy`, `pulloutBy`, `pulloutDate`, `pulloutNo`) VALUES
+(1, 114563, 'customer', 'I need to check the battery first', 'Andro Derecho', 'Vonryan', '2014-09-26 13:53:56', '712921'),
+(2, 114563, 'customer', 'RAM need to pullout for inspection', 'Andro Derecho', 'Vonryan', '2014-09-26 23:47:20', '76264');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_reopen`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_reopen` (
+  `log` int(11) NOT NULL AUTO_INCREMENT,
+  `sv_number` int(11) NOT NULL,
+  `reassignTo` varchar(255) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  `date_reopen` datetime NOT NULL,
+  `reopenBy` varchar(255) NOT NULL,
+  PRIMARY KEY (`log`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `tb_reopen`
+--
+
+INSERT INTO `tb_reopen` (`log`, `sv_number`, `reassignTo`, `reason`, `date_reopen`, `reopenBy`) VALUES
+(10, 114563, 'derechoandro@yahoo.com', 'hard disk problem', '2014-09-26 14:39:47', 'Andro Derecho'),
+(11, 114563, 'derechoandro@yahoo.com', '', '2014-09-26 15:20:25', 'Andro Derecho');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_return`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_return` (
+  `log` int(20) NOT NULL,
+  `sv_number` int(11) NOT NULL,
+  `returnNo` int(11) NOT NULL,
+  `r_preparedBy` varchar(255) NOT NULL,
+  `returnBy` varchar(255) NOT NULL,
+  `returnDate` datetime NOT NULL,
+  `problem_res` varchar(255) NOT NULL,
+  `r_remarks` varchar(255) NOT NULL,
+  PRIMARY KEY (`log`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_return`
+--
+
+INSERT INTO `tb_return` (`log`, `sv_number`, `returnNo`, `r_preparedBy`, `returnBy`, `returnDate`, `problem_res`, `r_remarks`) VALUES
+(1, 114563, 694519, 'Andro Derecho', 'Vonryan', '2014-09-26 13:59:17', '', 'The battery has been replaced with the brand new one..\r\nissue has been resolved.'),
+(2, 114563, 660431, 'Andro Derecho', 'Vonryan', '2014-09-26 23:52:30', '', 'RAM has been replaced( Brand New )');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ticket`
+--
+
+CREATE TABLE IF NOT EXISTS `ticket` (
+  `user` varchar(25) NOT NULL,
+  `source` varchar(25) NOT NULL,
+  `status` varchar(25) NOT NULL,
+  `assignto` varchar(25) NOT NULL,
+  `subject` varchar(25) NOT NULL,
+  `issue` varchar(255) NOT NULL,
+  `details` varchar(25) NOT NULL,
+  `remarks` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL,
+  `company` varchar(25) NOT NULL,
+  `duedate` date NOT NULL,
+  `priority` varchar(25) NOT NULL,
+  `ticketID` int(10) NOT NULL,
+  `response` text,
+  `help_topic` varchar(20) NOT NULL,
+  `slaplan` varchar(16) NOT NULL,
+  `duetime` date NOT NULL,
+  `reference` varchar(8) NOT NULL,
+  `customer_code` varchar(20) NOT NULL,
+  `customer_name` varchar(20) NOT NULL,
+  `customer_email` varchar(20) NOT NULL,
+  `customer_cnum` varchar(20) NOT NULL,
+  `customer_faxno` varchar(20) NOT NULL,
+  `customer_address` varchar(20) NOT NULL,
+  `customer_contact_person` varchar(20) NOT NULL,
+  `user_email` varchar(20) NOT NULL,
+  `time_created` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wo_ticket_details`
+--
+
+CREATE TABLE IF NOT EXISTS `wo_ticket_details` (
+  `sv_number` int(11) NOT NULL,
+  `assignToEngineer` varchar(50) NOT NULL,
+  `log_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `MessagetoEngineer` text NOT NULL,
+  `work_number` int(6) NOT NULL,
+  `created` datetime NOT NULL,
+  `status` varchar(25) NOT NULL,
+  `priority` varchar(25) NOT NULL,
+  `duedate` date NOT NULL,
+  `response` int(1) NOT NULL,
+  `duetime` time NOT NULL,
+  `time_created` datetime NOT NULL,
+  `wo_date_created` datetime NOT NULL,
+  `isOverdue` int(1) NOT NULL,
+  `log_No` int(11) NOT NULL,
+  PRIMARY KEY (`log_ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `wo_ticket_details`
+--
+
+INSERT INTO `wo_ticket_details` (`sv_number`, `assignToEngineer`, `log_ID`, `MessagetoEngineer`, `work_number`, `created`, `status`, `priority`, `duedate`, `response`, `duetime`, `time_created`, `wo_date_created`, `isOverdue`, `log_No`) VALUES
+(114563, 'andro.derecho@atomitsoln.com', 11, 'mr. engineer you need to fix asap said by csr', 641846, '2014-09-26 13:51:54', '1', 'Normal', '2014-09-27', 0, '12:00:00', '2014-09-26 13:51:54', '2014-09-26 13:51:54', 0, 1),
+(114563, 'andro.derecho@atomitsoln.com', 14, 'blah blah engineer from supervisor', 248200, '2014-09-26 23:36:47', '1', 'Normal', '2014-09-27', 0, '12:00:00', '2014-09-26 23:36:47', '2014-09-26 23:36:47', 0, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wo_ticket_details_replay`
+--
+
+CREATE TABLE IF NOT EXISTS `wo_ticket_details_replay` (
+  `message` text NOT NULL,
+  `sender` varchar(20) NOT NULL,
+  `reciever` varchar(20) NOT NULL,
+  `DateResponse` datetime NOT NULL,
+  `sv_number` int(6) NOT NULL,
+  `logs` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`logs`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `wo_ticket_details_replay`
+--
+
+INSERT INTO `wo_ticket_details_replay` (`message`, `sender`, `reciever`, `DateResponse`, `sv_number`, `logs`) VALUES
+('i need you to fix this issue asap', 'supervisor', '', '2014-09-26 13:52:34', 114563, 4),
+('good mr. supervisor...issue has been resolved.', 'engineer_vonryan', '', '2014-09-26 14:10:10', 114563, 5),
+('need to fix asap mr. engineer', 'supervisor', '', '2014-09-26 16:56:06', 114563, 6),
+('ok mr. supervisor\r\n', 'engineer_vonryan', '', '2014-09-26 21:32:27', 114563, 7),
+('blah blah', 'engineer_vonryan', '', '2014-09-26 21:49:31', 114563, 8),
+('meow meow', 'engineer_vonryan', '', '2014-09-26 21:50:50', 114563, 9),
+('', 'supervisor', '', '2014-09-26 23:37:26', 114563, 10);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
